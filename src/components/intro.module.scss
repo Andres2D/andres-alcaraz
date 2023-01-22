@@ -1,0 +1,71 @@
+@import '../styles/colors';
+@import '../styles/breakpoints';
+
+.intro {
+  align-items: center;
+  background-color: $indigo-dark;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  
+  .title, .subtitle {
+    color: $indigo-light;
+    margin: 0 auto;;
+    font-family: 'Bear';
+    font-size: 55px;
+
+    .name {
+      color: $indigo-medium;
+    }
+  }
+
+  .explore {
+    background-color: transparent;
+    border: 2px solid $indigo-medium;
+    border-radius: 8px;
+    color: $indigo-medium;
+    font-family: 'Bear';
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 15px 30px;
+    transition: all 300ms;
+
+    &:hover {
+      background-color: $indigo-light;
+      border: 2px solid $indigo-light;
+      cursor: pointer;
+    }
+  }
+
+  .blogLink {
+    color: $indigo-light;
+    font-family: 'Bear';
+    font-size: 24px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: $medium) {
+  .intro {
+    .title, .subtitle {
+      font-size: 40px;
+    }
+  }
+}
+
+@media (max-width: $small) {
+  .intro {
+    .title, .subtitle {
+      font-size: 25px;
+    }
+
+    .explore {
+      padding: 10px 25px;
+    }
+    
+    .blogLink {
+      font-size: 20px;
+    }
+  }
+}
