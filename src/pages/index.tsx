@@ -1,6 +1,7 @@
 import * as React from "react";
 import type { HeadFC } from "gatsby";
 import Intro from "../components/intro";
+import Experience from "../components/experience";
 import About from "../components/about";
 
 const IndexPage: React.FC = () => {
@@ -8,6 +9,7 @@ const IndexPage: React.FC = () => {
     <>
       <Intro />
       <About />
+      <Experience />
     </>
   )
 }
