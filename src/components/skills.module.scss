@@ -1,0 +1,86 @@
+@import '../styles/colors';
+@import '../styles/breakpoints';
+
+.skills {
+  align-items: center;
+  background-color: $indigo-light;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  padding-bottom: 40px;
+
+  .title {
+    font-family: 'Bear';
+    color: $indigo-dark;
+  }
+
+  .topics {
+    display: flex;
+    font-family: 'Bear';
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+
+    .title {
+      color: $indigo-medium;
+      font-size: 30px;
+      font-weight: bolder;
+      margin-left: 10px;
+    }
+
+    .topic {
+      .bar {
+        margin: 10px;
+        width: 300px;
+        text-align: center;
+    
+        .skillTitle {
+          text-align: left;
+        }
+    
+        .progress {
+          padding: 6px;
+          border-radius: 30px;
+          background: $indigo-light;
+          box-shadow: 
+            inset 0 1px 2px rgba(0, 0, 0, 0.25),
+            0 1px rgba(255, 255, 255, 0.08);
+        }
+    
+        .progressBar {
+          height: 18px;
+          border-radius: 30px;
+    
+          .progressValue {
+            color: white;
+          }
+        }
+    
+        .progressMoved .progressBar {
+          background-color: $indigo-medium;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $xxl-big) {
+  .skills {
+    .topics {
+      justify-content: space-around;
+    }
+  }
+}
+
+@media (max-width: $xxl-big) {
+  .skills {
+    .topics {
+      .topic {
+        .bar {
+          width: 260px;
+        }
+      }
+    }
+  }
+}
