@@ -1,0 +1,56 @@
+@import '../styles/colors';
+@import '../styles/breakpoints';
+
+.contact {
+  align-items: center;
+  background-color: $indigo-light;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+
+  .sectionTitle {
+    font-family: 'Bear';
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  .list {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px auto;
+    flex-wrap: wrap;
+    width: 60%;
+
+    .socialPic {
+      transition: all 300ms;
+      margin-bottom: 10px;
+      width: 50px;
+      filter: drop-shadow(2px 2px 1px gray);
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.2, 1.2);
+      }
+    }
+  }
+
+  .badge {
+    margin-bottom: 20px;
+    transition: all 300ms;
+    filter: drop-shadow(2px 2px 1px gray);
+    width: 350px;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.05, 1.05);
+    }
+  }
+}
+
+@media (max-width: $small) {
+  .contact {
+    .badge {
+      width: 250px;
+    }
+  }
+}

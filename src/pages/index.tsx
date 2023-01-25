@@ -5,6 +5,7 @@ import Experience from "../components/experience";
 import About from "../components/about";
 import Skills from "../components/skills";
 import Projects from "../components/projects";
+import Contact from "../components/contact";
 
 const IndexPage: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const IndexPage: React.FC = () => {
       <Experience />
       <Skills />
       <Projects />
+      <Contact />
     </>
   )
 }
