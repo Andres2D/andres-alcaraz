@@ -3,6 +3,7 @@ import type { HeadFC } from "gatsby";
 import Intro from "../components/intro";
 import Experience from "../components/experience";
 import About from "../components/about";
+import Skills from "../components/skills";
 
 const IndexPage: React.FC = () => {
   return (
@@ -10,6 +11,7 @@ const IndexPage: React.FC = () => {
       <Intro />
       <About />
       <Experience />
+      <Skills />
     </>
   )
 }
