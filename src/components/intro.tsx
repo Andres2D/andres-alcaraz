@@ -2,6 +2,12 @@ import * as React from "react";
 import * as styles from './intro.module.scss';
 
 const Intro: React.FC = () => {
+
+  const handleExploreClick = () => {
+    let el = document.getElementById('about');
+    el?.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
+
   return (
     <section className={styles.intro}>
       <h1 className={styles.title}>
@@ -10,9 +16,9 @@ const Intro: React.FC = () => {
       <h2 className={styles.subtitle}>
         I'm a Software Engineer
         </h2>
-      <button className={styles.explore}>
+      <button className={styles.explore} onClick={handleExploreClick}>
         Explore
-        </button>
+      </button>
       <a 
         className={styles.blogLink} 
         href="https://2d-blog-nextjs.vercel.app/">

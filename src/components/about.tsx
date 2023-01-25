@@ -5,7 +5,7 @@ import profile from '../images/profile.png';
 
 const About: React.FC = () => {
   return (
-    <section className={styles.about}>
+    <section id='about' className={styles.about}>
       <h1 className={styles.title}>About</h1>
       <div className={styles.container}>
         <img className={styles.picture} src={profile} alt="Andres Alcaraz" />

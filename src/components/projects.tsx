@@ -8,6 +8,7 @@ const Projects: React.FC = () => {
   const enginesMap = (engines: Engine[]) => {
     return engines.map((engine) => (
       <img
+        key={engine.name}
         className={styles.engineIcon}
         src={engine.svgSrc}
         alt={engine.name}
