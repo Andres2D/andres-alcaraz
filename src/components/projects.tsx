@@ -38,11 +38,13 @@ const Projects: React.FC = () => {
             onClick={() => handleProjectClick(project.urlRepository)} 
             className={styles.github} 
             src={github} 
+            alt="github"
           />
           <img 
             onClick={() => handleProjectClick(project.urlDeploy)} 
             className={styles.web} 
             src={external}
+            alt="web"
           />
         </div>
       </div>
