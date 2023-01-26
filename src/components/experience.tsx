@@ -13,11 +13,11 @@ const Experience: React.FC = () => {
       <li key={job.id} className={styles.job}>
         <a href={job.link} className={`${styles.name} ${styles.link}`}>
           {job.place}
-          <small className={styles.date}> from {job.from}</small>
-          { job.to && <small className={styles.date}> to {job.to}</small>}
+          <small> from {job.from}</small>
+          { job.to && <small> to {job.to}</small>}
         </a>
-        <h3 className={styles.info}>{job.role}</h3>
-        <h3 className={styles.info}>{job.description}</h3>
+        <h3>{job.role}</h3>
+        <h3>{job.description}</h3>
       </li>
     )
   })
