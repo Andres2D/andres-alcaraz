@@ -1,12 +1,14 @@
 import * as React from "react";
 import type { HeadFC } from "gatsby";
 import { Helmet } from 'react-helmet';
-import Intro from "../components/intro";
-import Experience from "../components/experience";
-import About from "../components/about";
-import Skills from "../components/skills";
-import Projects from "../components/projects";
-import Contact from "../components/contact";
+import {
+  Intro,
+  About,
+  Experience,
+  Skills,
+  Projects,
+  Contact
+} from '../components';
 
 const IndexPage: React.FC = () => {
   return (
