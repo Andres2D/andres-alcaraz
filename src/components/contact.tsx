@@ -10,12 +10,17 @@ const Contact: React.FC = () => {
       className={styles.socialPic}
       src={place.logo} 
       alt={place.name}
-      onClick={() => handleSocialLinkRedirect(place.link)}
+      onClick={() => handleSocialLinkRedirect(place.isEmail, place.link)}
     />
   ));
   
-  const handleSocialLinkRedirect = (link: string) => {
-    window.open(link, '_blank');
+  const handleSocialLinkRedirect = (isEmail: boolean, link: string) => {
+    if(isEmail) {
+      const email = `mailto:andres2d1997.1206@gmail.com?subject=files&body=Hi Andres, I just checked your web page.`;
+      window.location.href = email;
+    }else {
+      window.open(link, '_blank');
+    }
   }
 
   return (
