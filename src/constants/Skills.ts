@@ -78,5 +78,9 @@ export const skills: { [topic: string]: Skill[]} = {
       name: 'Storybook',
       progress: '50%'
     },
+    {
+      name: 'Appian',
+      progress: '40%'
+    },
   ]
 }
