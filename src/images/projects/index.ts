@@ -7,6 +7,10 @@ import gifsApp from './gifs-app.svg';
 import landingPage from './landing-page.svg';
 import mapsApp from './maps-app.svg';
 import motoFox from './moto-fox-app.svg';
+import numrot from './numrot-web.webp';
+import kavak from './kavak.png';
+import keralty from './keralty.png';
+import ecopetrol from './ecopetrol.png';
 
 export {
   blog,
@@ -18,4 +22,8 @@ export {
   landingPage,
   mapsApp,
   motoFox,
+  numrot,
+  kavak,
+  keralty,
+  ecopetrol
 }

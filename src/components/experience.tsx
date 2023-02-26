@@ -1,5 +1,6 @@
 import * as React from "react";
 import { jobsList } from "../constants/Jobs";
+import { projects } from "../constants/ClientProjects";
 import * as styles from './experience.module.scss';
 // TODO: fix import
 import developerImage from '../images/developer.svg';
@@ -20,7 +21,20 @@ const Experience: React.FC = () => {
         <h3>{job.description}</h3>
       </li>
     )
-  })
+  });
+
+  const clientProjects = projects.map(
+    ({ image, name, width }) => {
+      return <img 
+        className={styles.logo}
+        key={name} 
+        title={name} 
+        src={image} 
+        alt={name} 
+        width={width} 
+      />
+    }
+  );
 
   return (
     <section className={styles.experience}>
@@ -60,6 +74,12 @@ const Experience: React.FC = () => {
           </article>
         </div>
       </div>
+      <section className={styles.projects}>
+        <h2 className={styles.subtitle}>Some projects were I've worked on</h2>
+        <div className={styles.projectLogos}>
+          { clientProjects }
+        </div>
+      </section>
     </section>
   )
 }

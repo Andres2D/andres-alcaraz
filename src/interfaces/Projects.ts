@@ -7,9 +7,16 @@ export interface Project {
   engine: Engine[]
 }
 
-export interface Engine {
+interface BasePicture {
   name: string;
-  svgSrc: string;
   width: string;
   height: string;
+}
+
+export interface ProjectClient extends BasePicture {
+  image: string;
+}
+
+export interface Engine extends BasePicture {
+  svgSrc: string;
 }

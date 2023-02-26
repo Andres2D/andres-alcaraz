@@ -71,13 +71,42 @@
           cursor: pointer;
           margin-right: 20px;
           width: 90px;
+          filter: drop-shadow(
+            1px 1px 1px rgba(255, 255, 255, 1)
+          );
         }
     
         .badge {
           height: 90px;
         }
       }
-    } 
+    }
+  }
+
+  .projects {
+    width: 80%;
+
+    .subtitle {
+      color: $indigo-light;
+      font-size: 30px;
+      font-family: "Bear";
+      text-align: center;
+    }
+
+    .projectLogos {
+      align-items: center;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+
+      .logo {
+        filter: drop-shadow(
+          1px 1px 1px rgba(255, 255, 255, 1)
+        );
+        margin-bottom: 5px;
+      }
+    }
   }
 }
 
