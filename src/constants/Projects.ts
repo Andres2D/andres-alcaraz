@@ -27,7 +27,7 @@ export const projects: Project[] = [
     name: 'Cotejo App',
     description: 'A funny application to schedule football matches',
     preview: cotejoApp,
-    urlDeploy: 'https://cotejoapp.vercel.app/auth',
+    urlDeploy: 'https://cotejoapp.vercel.app',
     urlRepository: 'https://github.com/Andres2D/cotejo-app-v2-nextjs',
     engine: [
       {
