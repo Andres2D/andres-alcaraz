@@ -8,6 +8,10 @@ import {
   react,
   redux,
   typescript,
+  vercel,
+  musixmatch,
+  spotify,
+  netlify
 } from '../images/svg';
 import {
   blog,
@@ -18,7 +22,8 @@ import {
   gifsApp,
   landingPage,
   mapsApp,
-  motoFox
+  motoFox,
+  playlistMaster
 } from '../images/projects';
 import { Project } from '../interfaces/Projects';
 
@@ -54,6 +59,45 @@ export const projects: Project[] = [
         width: '70px',
         height: '',
       },
+      {
+        name: 'vercel',
+        svgSrc: vercel,
+        width: '25px',
+        height: '',
+      }
+    ],
+  },
+  {
+    name: 'Playlist Master',
+    description: 'Guess the song based on the lyrics',
+    preview: playlistMaster,
+    urlDeploy: 'https://playlist-master.vercel.app/',
+    urlRepository: 'https://github.com/Andres2D/playlist-master',
+    engine: [
+      {
+        name: 'Next',
+        svgSrc: nextjs,
+        width: '25px',
+        height: '',
+      },
+      {
+        name: 'spotify',
+        svgSrc: spotify,
+        width: '25px',
+        height: '',
+      },
+      {
+        name: 'musixmatch',
+        svgSrc: musixmatch,
+        width: '25px',
+        height: '',
+      },
+      {
+        name: 'vercel',
+        svgSrc: vercel,
+        width: '25px',
+        height: '',
+      },
     ],
   },
   {
@@ -66,6 +110,12 @@ export const projects: Project[] = [
       {
         name: 'Angular',
         svgSrc: angular,
+        width: '25px',
+        height: '',
+      },
+      {
+        name: 'Netlify',
+        svgSrc: netlify,
         width: '25px',
         height: '',
       },
@@ -91,6 +141,12 @@ export const projects: Project[] = [
         width: '25px',
         height: '',
       },
+      {
+        name: 'Netlify',
+        svgSrc: netlify,
+        width: '25px',
+        height: '',
+      },
     ],
   },
   {
@@ -109,6 +165,12 @@ export const projects: Project[] = [
       {
         name: 'Redux',
         svgSrc: redux,
+        width: '25px',
+        height: '',
+      },
+      {
+        name: 'Netlify',
+        svgSrc: netlify,
         width: '25px',
         height: '',
       },
@@ -133,6 +195,12 @@ export const projects: Project[] = [
         width: '25px',
         height: '',
       },
+      {
+        name: 'Netlify',
+        svgSrc: netlify,
+        width: '25px',
+        height: '',
+      },
     ],
   },
   {
@@ -154,18 +222,9 @@ export const projects: Project[] = [
         width: '25px',
         height: '',
       },
-    ],
-  },
-  {
-    name: 'GifsApp',
-    description: 'Basic gifs search using giphy API',
-    preview: gifsApp,
-    urlDeploy: 'https://dazzling-roentgen-b4be77.netlify.app/',
-    urlRepository: 'https://github.com/Andres2D/gifsApp',
-    engine: [
       {
-        name: 'Angular',
-        svgSrc: angular,
+        name: 'Vercel',
+        svgSrc: vercel,
         width: '25px',
         height: '',
       },
@@ -190,6 +249,12 @@ export const projects: Project[] = [
         width: '25px',
         height: '',
       },
+      {
+        name: 'Netlify',
+        svgSrc: netlify,
+        width: '25px',
+        height: '',
+      },
     ],
   },
   {
@@ -202,6 +267,12 @@ export const projects: Project[] = [
       {
         name: 'React',
         svgSrc: react,
+        width: '25px',
+        height: '',
+      },
+      {
+        name: 'Netlify',
+        svgSrc: netlify,
         width: '25px',
         height: '',
       },

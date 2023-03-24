@@ -7,6 +7,7 @@ import gifsApp from './gifs-app.svg';
 import landingPage from './landing-page.svg';
 import mapsApp from './maps-app.svg';
 import motoFox from './moto-fox-app.svg';
+import playlistMaster from './playlist-master.svg';
 import numrot from './numrot-web.webp';
 import kavak from './kavak.png';
 import keralty from './keralty.png';
@@ -25,5 +26,6 @@ export {
   numrot,
   kavak,
   keralty,
-  ecopetrol
+  ecopetrol,
+  playlistMaster
 }

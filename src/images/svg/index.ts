@@ -18,6 +18,10 @@ import redux from './redux.svg';
 import stackblitz from './stackblitz.png';
 import typescript from './typescript-icon.svg';
 import external from './external-link.svg';
+import musixmatch from './musixmatch.svg';
+import netlify from './netlify.svg';
+import spotify from './spotify-icon.svg';
+import vercel from './vercel-icon.svg';
 
 export {
   angular,
@@ -39,5 +43,9 @@ export {
   redux,
   stackblitz,
   typescript,
-  external
+  external,
+  musixmatch,
+  netlify,
+  spotify,
+  vercel
 };
