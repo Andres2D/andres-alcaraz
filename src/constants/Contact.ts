@@ -7,7 +7,8 @@ import {
   stackblitz,
   codepen,
   facebook,
-  instagram
+  instagram,
+  spotify
 } from '../images/svg';
 
 export const socialMedia: SocialMedia[] = [
@@ -57,6 +58,12 @@ export const socialMedia: SocialMedia[] = [
     name: 'instagram',
     link: 'https://www.instagram.com/andres.2d',
     logo: instagram,
+    isEmail: false
+  },
+  {
+    name: 'Spotify',
+    link: 'https://open.spotify.com/user/12168562021?si=0187e560c6994060',
+    logo: spotify,
     isEmail: false
   }
 ];

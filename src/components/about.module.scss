@@ -34,10 +34,13 @@
   
     .picture {
       display: block;
-      box-shadow: 5px 5px 6px rgba(64, 94, 130, 1);
       position: relative;
-      transform: rotate(5deg);
-      width: 245px;
+      
+      .image {
+        box-shadow: 5px 5px 6px rgba(64, 94, 130, 1);
+        transform: rotate(5deg);
+        width: 245px;
+      }
     }
   }
 

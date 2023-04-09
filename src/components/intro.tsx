@@ -1,4 +1,5 @@
 import * as React from "react";
+import { motion } from "framer-motion"; 
 import * as styles from './intro.module.scss';
 
 const Intro: React.FC = () => {
@@ -16,9 +17,14 @@ const Intro: React.FC = () => {
       <h2 className={styles.subtitle}>
         I'm a Software Engineer
         </h2>
-      <button className={styles.explore} onClick={handleExploreClick}>
+      <motion.button 
+        className={styles.explore} 
+        onClick={handleExploreClick}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+      >
         Explore
-      </button>
+      </motion.button>
       <a 
         className={styles.blogLink} 
         href="https://2d-blog-nextjs.vercel.app/">

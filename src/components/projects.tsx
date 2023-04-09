@@ -1,8 +1,11 @@
 import * as React from 'react';
+import { motion } from 'framer-motion';
 import { projects } from '../constants/Projects';
+import { MotionWrapper } from '../hoc/motion-container';
 import { external, github } from '../images/svg';
 import { Engine } from '../interfaces/Projects';
 import * as styles from './projects.module.scss';
+import { textVariant, fadeIn } from '../utils/motion';
 
 const Projects: React.FC = () => {
   const enginesMap = (engines: Engine[]) => {
@@ -22,8 +25,12 @@ const Projects: React.FC = () => {
     window.open(link, '_blank');
   }
 
-  const projectsList = projects.map((project) => (
-    <div key={project.name} className={styles.card}>
+  const projectsList = projects.map((project, index) => (
+    <motion.div 
+      key={project.name} 
+      className={styles.card}
+      variants={fadeIn('up', 'spring', index * 0.1, 1)}
+    >
       <img
         className={styles.preview}
         src={project.preview}
@@ -48,15 +55,17 @@ const Projects: React.FC = () => {
           />
         </div>
       </div>
-    </div>
+    </motion.div>
   ));
 
   return (
     <section className={styles.projects}>
-      <h1 className={styles.title}>Projects</h1>
+      <motion.div variants={textVariant}>
+        <h1 className={styles.title}>Projects</h1>
+      </motion.div>
       <div className={styles.projectsList}>{projectsList}</div>
     </section>
   );
 };
 
-export default Projects;
+export default MotionWrapper(Projects);
