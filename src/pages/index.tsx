@@ -1,6 +1,8 @@
 import * as React from "react";
 import type { HeadFC } from "gatsby";
 import { Helmet } from 'react-helmet';
+import StartsCanvas from '../components/canvas/stars';
+import * as styles from './index.module.scss';
 import {
   Intro,
   About,
@@ -17,7 +19,10 @@ const IndexPage: React.FC = () => {
         <html lang='en' />
         <meta name="description" content="Andres Alcaraz, Software Developer" />
       </Helmet>
-      <Intro />
+      <div className={styles.introContainer}>
+        <Intro />
+        <StartsCanvas />
+      </div>
       <About />
       <Experience />
       <Skills />

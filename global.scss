@@ -1,6 +1,9 @@
+@import './src/styles/colors';
+
 body {
   padding: 0;
   margin: 0;
+  background-color: $indigo-dark;
 }
 
 @font-face {

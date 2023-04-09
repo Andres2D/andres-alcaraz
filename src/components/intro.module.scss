@@ -2,22 +2,27 @@
 @import '../styles/breakpoints';
 
 .intro {
-  align-items: center;
-  background-color: $indigo-dark;
-  display: flex;
-  flex-direction: column;
   height: 100vh;
   justify-content: center;
-  
-  .title, .subtitle {
-    color: $indigo-light;
-    margin: 0 auto;;
-    font-family: 'Bear';
-    font-size: 55px;
-    text-align: center;
+  position: relative;
+  z-index: 0;
 
-    .name {
-      color: $indigo-medium;
+  .description {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: -400px;
+
+    .title, .subtitle {
+      color: $indigo-light;
+      margin: 0 auto;;
+      font-family: 'Bear';
+      font-size: 55px;
+      text-align: center;
+  
+      .name {
+        color: $indigo-medium;
+      }
     }
   }
 
@@ -49,16 +54,22 @@
 
 @media (max-width: $medium) {
   .intro {
-    .title, .subtitle {
-      font-size: 30px;
+    .description {
+      .title, .subtitle {
+        font-size: 30px;
+      }
     }
   }
 }
 
 @media (max-width: $small) {
   .intro {
-    .title, .subtitle {
-      font-size: 30px;
+    .description {
+      margin-top: -300px;
+
+      .title, .subtitle {
+        font-size: 30px;
+      }
     }
 
     .explore {
