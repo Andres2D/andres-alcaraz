@@ -12,6 +12,8 @@
     display: flex;
     flex-direction: column;
     margin-top: -400px;
+    position: relative;
+    z-index: 1;
 
     .title, .subtitle {
       color: $indigo-light;
