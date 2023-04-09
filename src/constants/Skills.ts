@@ -82,5 +82,13 @@ export const skills: { [topic: string]: Skill[]} = {
       name: 'Appian',
       progress: '40%'
     },
+    {
+      name: 'framer-motion',
+      progress: '20%'
+    },
+    {
+      name: 'Three.js',
+      progress: '10%'
+    },
   ]
 }

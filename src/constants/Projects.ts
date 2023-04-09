@@ -56,7 +56,7 @@ export const projects: Project[] = [
       {
         name: 'mongodb',
         svgSrc: mongodb,
-        width: '70px',
+        width: '12px',
         height: '',
       },
       {
@@ -96,6 +96,12 @@ export const projects: Project[] = [
         name: 'vercel',
         svgSrc: vercel,
         width: '25px',
+        height: '',
+      },
+      {
+        name: 'mongodb',
+        svgSrc: mongodb,
+        width: '12px',
         height: '',
       },
     ],
