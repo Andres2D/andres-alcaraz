@@ -39,13 +39,13 @@ const About: React.FC = () => {
       <div className={styles.container}>
         <motion.div 
           className={styles.picture}
-          variants={fadeIn('right', 'spring', 0.1, 1)}
+          variants={fadeIn('down', 'spring', 0.1, 1)}
         >
           <img className={styles.image} src={profile} alt="Andres Alcaraz" />
         </motion.div>
         <motion.div 
           className={styles.presentation}
-          variants={fadeIn('left', 'spring', 0.1, 1)}
+          variants={fadeIn('up', 'spring', 0.1, 1)}
         >
           <p>
             Hi, I'm <strong className={styles.spot}>Andres</strong>. I'm a{' '}

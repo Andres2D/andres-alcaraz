@@ -14,15 +14,17 @@ const Skills: React.FC = () => {
         <motion.div variants={textVariant}>
           <h3 className={styles.skillTitle}>{skill.name}</h3>
         </motion.div>  
-        <div className={`${styles.progress} ${styles.progressMoved}`}>
-          <motion.div 
+        <motion.div 
+          className={`${styles.progress} ${styles.progressMoved}`}  
+          variants={fadeIn('right', 'spring', index * 0.3, 1)}
+        >
+          <div 
             className={styles.progressBar} 
             style={{ width: skill.progress}}
-            variants={fadeIn('right', 'spring', index * 0.3, 1)}
           >
             <small className={styles.progressValue}>{skill.progress}</small>
-          </motion.div>                       
-        </div> 
+          </div>                       
+        </motion.div> 
       </div>
     ))
   }

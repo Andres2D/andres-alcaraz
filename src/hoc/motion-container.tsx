@@ -9,7 +9,7 @@ export const MotionWrapper = (Component: React.FC) =>
         variants={staggerContainer()}
         initial='hidden'
         whileInView='show'
-        viewport={{ once: true, amount: 0.25 }}
+        viewport={{ once: true, amount: 0.15 }}
       >
         <Component />
       </motion.section>
