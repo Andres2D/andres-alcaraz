@@ -8,7 +8,7 @@ import {
 } from '@react-three/drei';
 
 const Satellite = () => {
-  const satellite = useGLTF('./models/simple_satellite/scene.gltf');
+  const satellite = useGLTF('./models/iss-_international_space_station/scene.gltf');
   
   return (
     <mesh>
@@ -45,9 +45,9 @@ const Satellite = () => {
       />
       <primitive 
         object={satellite.scene}
-        scale={0.30}
+        scale={20}
         position={[0,1,0]}
-        rotation={[2,0,10]}
+        rotation={[10,0,10]}
       />
     </mesh>
   )
