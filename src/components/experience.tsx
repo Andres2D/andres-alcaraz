@@ -9,7 +9,6 @@ import ielts from '../images/IELTS.png';
 import wes from '../images/wes.png';
 import { fadeIn, textVariant } from '../utils/motion';
 import { MotionWrapper } from '../hoc/motion-container';
-import CubeCanvas from './canvas/rubiks-cube';
 
 const Experience: React.FC = () => {
   const jobs = jobsList.map((job, index) => {
@@ -60,7 +59,6 @@ const Experience: React.FC = () => {
         <motion.div 
           variants={fadeIn('down', 'spring', 0.2, 1)}
           className={styles.complement}>
-          <CubeCanvas />
           <article className={styles.certification}>
             <img className={styles.badge} src={wes} alt="wes-certificated" />
             <p>
