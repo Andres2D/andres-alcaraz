@@ -12,6 +12,7 @@ import numrot from './numrot-web.webp';
 import kavak from './kavak.png';
 import keralty from './keralty.png';
 import ecopetrol from './ecopetrol.png';
+import meaningful from './meaningful.svg';
 
 export {
   blog,
@@ -27,5 +28,6 @@ export {
   kavak,
   keralty,
   ecopetrol,
-  playlistMaster
+  playlistMaster,
+  meaningful
 }

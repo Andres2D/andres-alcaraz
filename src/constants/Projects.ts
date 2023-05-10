@@ -2,7 +2,6 @@ import {
   angular,
   contentful,
   google,
-  mapbox,
   mongodb,
   nextjs,
   react,
@@ -11,7 +10,10 @@ import {
   vercel,
   musixmatch,
   spotify,
-  netlify
+  netlify,
+  rapidapi,
+  pwa,
+  vitejs
 } from '../images/svg';
 import {
   blog,
@@ -19,10 +21,9 @@ import {
   countryApp,
   diceGame,
   dontGuess,
-  gifsApp,
   landingPage,
-  mapsApp,
   motoFox,
+  meaningful,
   playlistMaster
 } from '../images/projects';
 import { Project } from '../interfaces/Projects';
@@ -102,6 +103,33 @@ export const projects: Project[] = [
         name: 'mongodb',
         svgSrc: mongodb,
         width: '12px',
+        height: '',
+      },
+    ],
+  },
+  {
+    name: 'meaningful',
+    description: 'A PWA to get word definitions and create great phone backgrounds.',
+    preview: meaningful,
+    urlDeploy: 'https://meaningful-one.vercel.app/',
+    urlRepository: 'https://github.com/Andres2D/meaningful',
+    engine: [
+      {
+        name: 'Vite',
+        svgSrc: vitejs,
+        width: '25px',
+        height: '',
+      },
+      {
+        name: 'PWA',
+        svgSrc: pwa,
+        width: '40px',
+        height: '',
+      },
+      {
+        name: 'RapidApi',
+        svgSrc: rapidapi,
+        width: '25px',
         height: '',
       },
     ],
@@ -231,33 +259,6 @@ export const projects: Project[] = [
       {
         name: 'Vercel',
         svgSrc: vercel,
-        width: '25px',
-        height: '',
-      },
-    ],
-  },
-  {
-    name: 'MapsApp',
-    description: 'A Map application using Mapbox',
-    preview: mapsApp,
-    urlDeploy: 'https://dazzling-hawking-69f7b6.netlify.app',
-    urlRepository: 'https://github.com/Andres2D/mapsApp',
-    engine: [
-      {
-        name: 'Angular',
-        svgSrc: angular,
-        width: '25px',
-        height: '',
-      },
-      {
-        name: 'Mapbox',
-        svgSrc: mapbox,
-        width: '25px',
-        height: '',
-      },
-      {
-        name: 'Netlify',
-        svgSrc: netlify,
         width: '25px',
         height: '',
       },

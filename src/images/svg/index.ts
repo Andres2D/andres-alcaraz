@@ -22,6 +22,9 @@ import musixmatch from './musixmatch.svg';
 import netlify from './netlify.svg';
 import spotify from './spotify-icon.svg';
 import vercel from './vercel-icon.svg';
+import pwa from './pwa.svg';
+import rapidapi from './rapidapi.png';
+import vitejs from './vitejs.svg';
 
 export {
   angular,
@@ -47,5 +50,8 @@ export {
   musixmatch,
   netlify,
   spotify,
-  vercel
+  vercel,
+  pwa,
+  rapidapi,
+  vitejs
 };
