@@ -4,7 +4,6 @@ import { jobsList } from '../constants/Jobs';
 import { projects } from '../constants/ClientProjects';
 import * as styles from './experience.module.scss';
 // TODO: fix import
-import developerImage from '../images/developer.svg';
 import ielts from '../images/IELTS.png';
 import wes from '../images/wes.png';
 import { fadeIn, textVariant } from '../utils/motion';
@@ -76,9 +75,9 @@ const Experience: React.FC = () => {
           <article className={styles.certification}>
             <img className={styles.ielts} src={ielts} alt="IELTS" />
             <p>
-              IELTS General Training score of B2
+              IELTS General Training - Band 7 - C1
               <br />
-              <small>Competent User</small>
+              <small>Good User</small>
             </p>
           </article>
         </motion.div>
