@@ -3,8 +3,8 @@ import { Job } from "../interfaces/Job";
 export const jobsList: Job[] = [
   {
     id: 1,
-    place: 'Wolox',
-    role: 'Frontend Developer',
+    place: 'Accenture ltda',
+    role: 'Senior Frontend Developer',
     from: 2021,
     description: 'Techs solutions',
     link: 'https://www.wolox.com.ar/'
