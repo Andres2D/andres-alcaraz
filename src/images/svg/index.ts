@@ -25,6 +25,7 @@ import vercel from './vercel-icon.svg';
 import pwa from './pwa.svg';
 import rapidapi from './rapidapi.png';
 import vitejs from './vitejs.svg';
+import x from './x.webp';
 
 export {
   angular,
@@ -53,5 +54,6 @@ export {
   vercel,
   pwa,
   rapidapi,
-  vitejs
+  vitejs,
+  x
 };

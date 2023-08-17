@@ -8,7 +8,8 @@ import {
   codepen,
   facebook,
   instagram,
-  spotify
+  spotify,
+  x
 } from '../images/svg';
 
 export const socialMedia: SocialMedia[] = [
@@ -58,6 +59,12 @@ export const socialMedia: SocialMedia[] = [
     name: 'instagram',
     link: 'https://www.instagram.com/andres.2d',
     logo: instagram,
+    isEmail: false
+  },
+  {
+    name: 'X',
+    link: 'https://twitter.com/Andres_2D_',
+    logo: x,
     isEmail: false
   },
   {
