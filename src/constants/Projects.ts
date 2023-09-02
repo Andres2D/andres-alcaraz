@@ -13,7 +13,8 @@ import {
   netlify,
   rapidapi,
   pwa,
-  vitejs
+  vitejs,
+  vue
 } from '../images/svg';
 import {
   blog,
@@ -24,7 +25,8 @@ import {
   landingPage,
   motoFox,
   meaningful,
-  playlistMaster
+  playlistMaster,
+  wordleClone
 } from '../images/projects';
 import { Project } from '../interfaces/Projects';
 
@@ -132,6 +134,21 @@ export const projects: Project[] = [
         width: '25px',
         height: '',
       },
+    ],
+  },
+  {
+    name: 'Wordle clone',
+    description: 'A clone of the game Wordle using Vue',
+    preview: wordleClone,
+    urlDeploy: 'https://wordle-clone-vue-five.vercel.app/',
+    urlRepository: 'https://github.com/Andres2D/wordle-clone-vue',
+    engine: [
+      {
+        name: 'Vue',
+        svgSrc: vue,
+        width: '25px',
+        height: '',
+      }
     ],
   },
   {
@@ -259,27 +276,6 @@ export const projects: Project[] = [
       {
         name: 'Vercel',
         svgSrc: vercel,
-        width: '25px',
-        height: '',
-      },
-    ],
-  },
-  {
-    name: '2Dice Game',
-    description: 'Dice game created on React',
-    preview: diceGame,
-    urlDeploy: 'https://2dice-game.netlify.app/',
-    urlRepository: 'https://github.com/Andres2D/react-dice-game',
-    engine: [
-      {
-        name: 'React',
-        svgSrc: react,
-        width: '25px',
-        height: '',
-      },
-      {
-        name: 'Netlify',
-        svgSrc: netlify,
         width: '25px',
         height: '',
       },

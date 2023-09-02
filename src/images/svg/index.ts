@@ -26,6 +26,7 @@ import pwa from './pwa.svg';
 import rapidapi from './rapidapi.png';
 import vitejs from './vitejs.svg';
 import x from './x.webp';
+import vue from './vue.svg';
 
 export {
   angular,
@@ -55,5 +56,6 @@ export {
   pwa,
   rapidapi,
   vitejs,
-  x
+  x,
+  vue
 };
