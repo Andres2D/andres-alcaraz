@@ -3,9 +3,7 @@ import { motion } from 'framer-motion';
 import { jobsList } from '../constants/Jobs';
 import { projects } from '../constants/ClientProjects';
 import * as styles from './experience.module.scss';
-// TODO: fix import
-import ielts from '../images/IELTS.png';
-import wes from '../images/wes.png';
+import { StaticImage } from "gatsby-plugin-image";
 import { fadeIn, textVariant } from '../utils/motion';
 import { MotionWrapper } from '../hoc/motion-container';
 
@@ -59,7 +57,7 @@ const Experience: React.FC = () => {
           variants={fadeIn('down', 'spring', 0.2, 1)}
           className={styles.complement}>
           <article className={styles.certification}>
-            <img className={styles.badge} src={wes} alt="wes-certificated" />
+            <StaticImage className={styles.badge} src='../images/wes.png' alt="wes-certificated" />
             <p>
               Software Engineer at
               <a
@@ -73,7 +71,7 @@ const Experience: React.FC = () => {
             </p>
           </article>
           <article className={styles.certification}>
-            <img className={styles.ielts} src={ielts} alt="IELTS" />
+            <StaticImage className={styles.ielts} src='../images/IELTS.png' alt="IELTS" />
             <p>
               IELTS General Training - Band 7 - C1
               <br />

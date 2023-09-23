@@ -1,8 +1,7 @@
 import * as React from 'react';
 import * as styles from './about.module.scss';
 import { motion } from 'framer-motion';
-// TODO: fix import warning
-import profile from '../images/profile.png';
+import { StaticImage } from "gatsby-plugin-image";
 import { textVariant, fadeIn } from '../utils/motion';
 import { MotionWrapper } from '../hoc/motion-container';
 import { complementSkills } from '../constants/About';
@@ -41,7 +40,7 @@ const About: React.FC = () => {
           className={styles.picture}
           variants={fadeIn('down', 'spring', 0.1, 1)}
         >
-          <img className={styles.image} src={profile} alt="Andres Alcaraz" />
+          <StaticImage className={styles.image} src='../images/profile.png' alt="Andres Alcaraz" />
         </motion.div>
         <motion.div 
           className={styles.presentation}
