@@ -18,6 +18,7 @@ const IndexPage: React.FC = () => {
       <Helmet>
         <html lang='en' />
         <meta name="description" content="Andres Alcaraz, Software Developer" />
+        <link rel="icon" type="image/x-icon" href="icons/icon-48x48.png" />
       </Helmet>
       <div className={styles.introContainer}>
         <Intro />
