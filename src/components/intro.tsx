@@ -16,7 +16,10 @@ const Intro: React.FC = () => {
       </h1>
       <h2 className={styles.subtitle}>
         I'm a Software Engineer
-        </h2>
+      </h2>
+      <h3 className={styles.status}>
+        Currently living in Toronto, Canada 🇨🇦
+      </h3>
       <motion.button 
         className={styles.explore} 
         onClick={handleExploreClick}
