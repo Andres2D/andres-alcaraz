@@ -22,7 +22,7 @@ const complementarySkillsMap = complementSkills.map((skill, index) => {
           <h3>{skill.title}</h3>
       }
       <p className={styles.description}>
-        Web application designer. Creative solutions and implementations.
+        { skill.description }
       </p>
     </motion.div>
   )
