@@ -4,3 +4,4 @@ node_modules/
 public/*
 !public/models/
 src/gatsby-types.d.ts
+.env
