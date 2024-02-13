@@ -11,8 +11,12 @@ import {
   Projects,
   Contact
 } from '../components';
+import { initializeGoogleAnalytics } from "../utils/google-analytics";
 
 const IndexPage: React.FC = () => {
+
+  initializeGoogleAnalytics();
+
   return (
     <>
       <Helmet>
