@@ -86,7 +86,7 @@ const Experience: React.FC = () => {
       </div>
       <section className={styles.projects}>
         <motion.div variants={textVariant}>
-          <h2 className={styles.subtitle}>Some projects were I've worked on</h2>
+          <h2 className={styles.subtitle}>Some projects I've worked on</h2>
         </motion.div>
         <div className={styles.projectLogos}>{clientProjects}</div>
       </section>
