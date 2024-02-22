@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 import { jobsList } from '../constants/Jobs';
 import { projects } from '../constants/ClientProjects';
 import * as styles from './experience.module.scss';
-import { StaticImage } from "gatsby-plugin-image";
 import { fadeIn, textVariant } from '../utils/motion';
 import { MotionWrapper } from '../hoc/motion-container';
+import { certifications } from '../constants/Certifications';
 
 const Experience: React.FC = () => {
   const jobs = jobsList.map((job, index) => {
@@ -46,6 +46,31 @@ const Experience: React.FC = () => {
     );
   });
 
+  const certificationsMap = certifications.map(certificate => {
+    return (
+      <article 
+        className={styles.certification}
+        key={certificate.name}
+      >
+        <img className={styles.certificate} src={certificate.image} alt={certificate.name} />
+        <p>
+          {certificate.title}
+          {
+            certificate.urlTitle &&
+            <a
+              className={styles.link}
+              href={certificate.url}
+            >
+              &nbsp;{certificate.urlTitle}
+            </a>
+          }
+          <br />
+          <small>{certificate.description}</small>
+        </p>
+      </article>
+    )
+  });
+
   return (
     <div className={styles.experience}>
       <motion.div variants={textVariant}>
@@ -56,28 +81,7 @@ const Experience: React.FC = () => {
         <motion.div 
           variants={fadeIn('down', 'spring', 0.2, 1)}
           className={styles.complement}>
-          <article className={styles.certification}>
-            <StaticImage className={styles.badge} src='../images/wes.png' alt="wes-certificated" />
-            <p>
-              Software Engineer at
-              <a
-                className={styles.link}
-                href="https://www.politecnicojic.edu.co/"
-              >
-                &nbsp;Politécnico Colombiano Jaime Isaza Cadavid
-              </a>
-              <br />
-              <small>Issued by World Education Services</small>
-            </p>
-          </article>
-          <article className={styles.certification}>
-            <StaticImage className={styles.ielts} src='../images/IELTS.png' alt="IELTS" />
-            <p>
-              IELTS General Training - Band 7 - C1
-              <br />
-              <small>Good User</small>
-            </p>
-          </article>
+          {certificationsMap}
         </motion.div>
       </div>
       <section className={styles.projects}>
