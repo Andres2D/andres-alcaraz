@@ -27,6 +27,7 @@ import rapidapi from './rapidapi.png';
 import vitejs from './vitejs.svg';
 import x from './x.webp';
 import vue from './vue.svg';
+import gatsby from './gatsby.svg';
 
 export {
   angular,
@@ -57,5 +58,6 @@ export {
   rapidapi,
   vitejs,
   x,
-  vue
+  vue,
+  gatsby
 };

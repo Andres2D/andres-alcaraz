@@ -14,15 +14,15 @@ import {
   rapidapi,
   pwa,
   vitejs,
-  vue
+  vue,
+  gatsby
 } from '../images/svg';
 import {
   blog,
   cotejoApp,
   countryApp,
-  diceGame,
+  marketing,
   dontGuess,
-  landingPage,
   motoFox,
   meaningful,
   playlistMaster,
@@ -152,21 +152,21 @@ export const projects: Project[] = [
     ],
   },
   {
-    name: 'Landing page WOLOX',
-    description: 'A landing page as a challenge from WOLOX',
-    preview: landingPage,
-    urlDeploy: 'https://flamboyant-rosalind-288be8.netlify.app/main',
-    urlRepository: 'https://github.com/Andres2D/landingpage-wx',
+    name: 'Professional portfolio',
+    description: 'A portfolio page for a Marketing specialist',
+    preview: marketing,
+    urlDeploy: 'https://sebastian-alcaraz-site.vercel.app/',
+    urlRepository: 'https://github.com/Andres2D/portfolio-sacz',
     engine: [
       {
-        name: 'Angular',
-        svgSrc: angular,
+        name: 'Gatsby',
+        svgSrc: gatsby,
         width: '25px',
         height: '',
       },
       {
-        name: 'Netlify',
-        svgSrc: netlify,
+        name: 'Vervel',
+        svgSrc: vercel,
         width: '25px',
         height: '',
       },

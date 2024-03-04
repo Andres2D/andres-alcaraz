@@ -14,6 +14,7 @@ import keralty from './keralty.png';
 import ecopetrol from './ecopetrol.png';
 import meaningful from './meaningful.svg';
 import wordleClone from './wordle-clone.svg';
+import marketing from './marketing.svg';
 
 export {
   blog,
@@ -31,5 +32,6 @@ export {
   ecopetrol,
   playlistMaster,
   meaningful,
-  wordleClone
+  wordleClone,
+  marketing
 }
