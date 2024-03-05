@@ -6,6 +6,7 @@ export const jobsList: Job[] = [
     place: 'Accenture ltda',
     role: 'Senior Frontend Developer',
     from: 2021,
+    to: 2024,
     description: 'Techs solutions',
     link: 'https://www.wolox.com.ar/'
   },

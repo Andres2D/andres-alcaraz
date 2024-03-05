@@ -33,6 +33,14 @@ const Intro: React.FC = () => {
         href="https://2d-blog-nextjs.vercel.app/">
         Visit my blog
       </a>
+      <a 
+        href="https://www.linkedin.com/in/andres-alcaraz" 
+        className={styles.liveButton}
+        target="_blank"
+      >
+        Open to work
+        <span className={styles.liveIcon} />
+      </a>
     </section>
   )
 }
