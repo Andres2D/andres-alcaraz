@@ -28,6 +28,7 @@ import vitejs from './vitejs.svg';
 import x from './x.webp';
 import vue from './vue.svg';
 import gatsby from './gatsby.svg';
+import leetcode from './leetcode.svg';
 
 export {
   angular,
@@ -59,5 +60,6 @@ export {
   vitejs,
   x,
   vue,
-  gatsby
+  gatsby,
+  leetcode
 };

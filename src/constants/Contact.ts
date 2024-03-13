@@ -9,6 +9,7 @@ import {
   facebook,
   instagram,
   spotify,
+  leetcode,
   x
 } from '../images/svg';
 
@@ -71,6 +72,12 @@ export const socialMedia: SocialMedia[] = [
     name: 'Spotify',
     link: 'https://open.spotify.com/user/12168562021?si=0187e560c6994060',
     logo: spotify,
+    isEmail: false
+  },
+  {
+    name: 'Leetcode',
+    link: 'https://leetcode.com/Andres2D/',
+    logo: leetcode,
     isEmail: false
   }
 ];
