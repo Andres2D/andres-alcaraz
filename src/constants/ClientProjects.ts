@@ -13,12 +13,14 @@ export const projects: ProjectClient[] = [
     image: numrot,
     width: '130px',
     height: '50px',
+    url: 'https://www.numrot7.net/vsdc/login'
   },
   {
     name: 'Kavak',
     image: kavak,
     width: '130px',
     height: '50px',
+    url: 'https://www.kavak.com/mx'
   },
   {
     name: 'Keralty',
@@ -31,5 +33,6 @@ export const projects: ProjectClient[] = [
     image: ecopetrol,
     width: '130px',
     height: '50px',
+    url: 'https://the.smartwater-stream.com/'
   }
 ];

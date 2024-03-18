@@ -28,7 +28,7 @@ const Experience: React.FC = () => {
     );
   });
 
-  const clientProjects = projects.map(({ image, name, width }, index) => {
+  const clientProjects = projects.map(({ image, name, width, url }, index) => {
     return (
       <motion.div
         key={name}
@@ -36,11 +36,12 @@ const Experience: React.FC = () => {
         className={styles.property}
       >
         <img
-          className={styles.logo}
+          className={`${styles.logo} ${url ? styles.isRedirect : ''}`}
           title={name}
           src={image}
           alt={name}
           width={width}
+          onClick={() => url ? window.open(url, '_blank') : null}
         />
       </motion.div>
     );
