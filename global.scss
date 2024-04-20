@@ -20,3 +20,34 @@ body {
   font-family: 'CodeLight';
   src: url('./src/assets/Fonts/SourceCodePro-Regular.ttf');
 }
+
+
+/* Vertical timeline dependency styles configuration */
+.vertical-timeline-element-content {
+  font-family: 'Bear';
+  background-color: $background !important;
+}
+
+.vertical-timeline-element-content-arrow {
+  border-right-color: $background !important;
+}
+
+.vertical-timeline-element-date {
+  color: $indigo-light;
+  font-size: 20px !important;
+}
+
+.vertical-timeline-element-title,
+.vertical-timeline-element-subtitle {
+  color: $indigo-medium;
+}
+
+.vertical-timeline-element-icon {
+  background-color: $indigo-dark;
+}
+
+@media (max-width: 1169px) {
+  .vertical-timeline-element-date {
+    color: $indigo-dark;
+  }
+}
