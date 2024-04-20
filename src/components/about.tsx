@@ -49,7 +49,7 @@ const About: React.FC = () => {
           <p>
             Hi, I'm <strong className={styles.spot}>Andres</strong>. I'm a{' '}
             <strong className={styles.spot}>software</strong> engineer from
-            Colombia, currently living in Toronto, Canada 🇨🇦. I'm committed to my work. I enjoy learning new ways to write{' '}
+            Colombia 🇨🇴, living in Canada 🇨🇦. I'm committed to my work. I enjoy learning new ways to write{' '}
             <strong className={styles.spot}>code</strong> and to improve my
             skills. Every day I try to do it{' '}
             <strong className={styles.spot}>better</strong> than the day before.

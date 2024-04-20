@@ -4,7 +4,7 @@ export interface Experience {
   from: number;
   description: string;
   icon: IconSelection;
-  to?: number;
+  to?: number | string;
   place?: string;
   link?: string;
 };

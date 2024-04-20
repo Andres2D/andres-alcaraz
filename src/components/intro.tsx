@@ -4,6 +4,8 @@ import * as styles from './intro.module.scss';
 
 const Intro: React.FC = () => {
 
+  const openToWork = false;
+
   const handleExploreClick = () => {
     let el = document.getElementById('about');
     el?.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
@@ -18,7 +20,7 @@ const Intro: React.FC = () => {
         I'm a Software Engineer
       </h2>
       <h3 className={styles.status}>
-        Currently living in Toronto, Canada 🇨🇦
+        🇨🇴 🇨🇦
       </h3>
       <motion.button 
         className={styles.explore} 
@@ -33,14 +35,17 @@ const Intro: React.FC = () => {
         href="https://2d-blog-nextjs.vercel.app/">
         Visit my blog
       </a>
-      <a 
-        href="https://www.linkedin.com/in/andres-alcaraz" 
-        className={styles.liveButton}
-        target="_blank"
-      >
-        Open to work
-        <span className={styles.liveIcon} />
-      </a>
+      {
+        openToWork &&
+        <a 
+          href="https://www.linkedin.com/in/andres-alcaraz" 
+          className={styles.liveButton}
+          target="_blank"
+        >
+          Open to work
+          <span className={styles.liveIcon} />
+        </a>
+      }
     </section>
   )
 }
