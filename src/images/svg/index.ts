@@ -29,6 +29,7 @@ import x from './x.webp';
 import vue from './vue.svg';
 import gatsby from './gatsby.svg';
 import leetcode from './leetcode.svg';
+import discord from './discord-icon.svg';
 
 export {
   angular,
@@ -61,5 +62,6 @@ export {
   x,
   vue,
   gatsby,
-  leetcode
+  leetcode,
+  discord
 };

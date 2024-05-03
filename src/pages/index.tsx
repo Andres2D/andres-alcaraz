@@ -9,7 +9,8 @@ import {
   Experience,
   Skills,
   Projects,
-  Contact
+  Contact,
+  Chatbot
 } from '../components';
 
 const IndexPage: React.FC = () => {
@@ -30,6 +31,7 @@ const IndexPage: React.FC = () => {
       <Skills />
       <Projects />
       <Contact />
+      <Chatbot />
     </>
   )
 }

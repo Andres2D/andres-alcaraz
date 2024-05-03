@@ -29,6 +29,7 @@ const Experience: React.FC = () => {
   const experienceMap = experience.map((exp) => {
     return (
       <VerticalTimelineElement
+        key={exp.id}
         date={`${exp.from} ${exp.to ? ` - ${exp.to}` : ''}`}
         icon={mapIcons[exp.icon]}
       >
