@@ -38,7 +38,7 @@ const Experience: React.FC = () => {
         </h3>
         <a 
           className="vertical-timeline-element-subtitle"
-          style={{ textDecoration: 'underline' }}
+          style={{ textDecoration: 'underline', color: '#3953ab' }}
           href={exp.link}
           target='_blank'
         >
