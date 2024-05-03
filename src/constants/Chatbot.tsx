@@ -39,11 +39,12 @@ export const mapAnswers: {[key: string ]: any } = {
     Moreover, He enjoys music, playing video games and football.
   `,
   'Work history': `
-    <p> Andres has worked for 3 companies: </p>
+    <p> Andres has worked for 4 companies: </p>
     <ul>
       <li><a href="https://motofox-belen.netlify.app/" target="_blank">Motofox</a> 🇨🇴: Cashier in a family business from 2015 to 2018.</li>
       <li><a href="https://www.numrot.com/" target="_blank">Numrot</a> 🇨🇴: Fullstack developer in a electronic billing company from 2019 to 2021</li>
       <li><a href="https://www.accenture.com/co-es" target="_blank">Accenture</a> 🇨🇴: Frontend developer in a multinational from 2021 to 2024</li>
+      <li><a href="https://www.monsterplow.ca/" target="_blank">Monster plowing company</a> 🇨🇦: Frontend developer in a Snow plowing company since 2024</li>
     </ul>
   
     <p>For sure is been a journey to become a Senior web developer.</p>
