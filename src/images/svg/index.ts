@@ -30,6 +30,16 @@ import vue from './vue.svg';
 import gatsby from './gatsby.svg';
 import leetcode from './leetcode.svg';
 import discord from './discord-icon.svg';
+import html from './html-5.svg';
+import css from './css-3.svg';
+import sass from './sass.svg';
+import js from './javascript.svg';
+import mysql from './mysql.svg';
+import git from './git.svg';
+import gitlab from './gitlab.svg';
+import jest from './jest.svg';
+import storybook from './storybook.svg';
+import threejs from './threejs.svg';
 
 export {
   angular,
@@ -63,5 +73,15 @@ export {
   vue,
   gatsby,
   leetcode,
-  discord
+  discord,
+  html,
+  css,
+  sass,
+  js,
+  mysql,
+  git,
+  gitlab,
+  jest,
+  storybook,
+  threejs
 };
