@@ -1,5 +1,28 @@
 import { Skill } from "../interfaces/Skills";
-import { angular, contentful, css, gatsby, git, github, gitlab, html, jest, js, mongodb, mysql, nextjs, nodejs, pwa, react, redux, sass, storybook, threejs, typescript } from "../images/svg";
+import { 
+  angular, 
+  contentful, 
+  css, 
+  gatsby, 
+  git, 
+  github, 
+  gitlab, 
+  html, 
+  jest, 
+  js, 
+  lit, 
+  mongodb, 
+  mysql, 
+  nextjs, 
+  nodejs, 
+  pwa, 
+  react, 
+  redux, 
+  sass, 
+  storybook,
+  threejs, 
+  typescript 
+} from "../images/svg";
 
 export const skills: { [topic: string]: Skill[]} = {
   frontend: [
@@ -75,6 +98,12 @@ export const skills: { [topic: string]: Skill[]} = {
       logo: threejs,
       color: '#FFF'
     },
+    {
+      name: 'Lit',
+      progress: '40%',
+      logo: lit,
+      color: '#E3E3E3'
+    }
   ],
   backend: [
     {
