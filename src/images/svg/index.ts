@@ -40,6 +40,7 @@ import gitlab from './gitlab.svg';
 import jest from './jest.svg';
 import storybook from './storybook.svg';
 import threejs from './threejs.svg';
+import lit from './lit-icon.svg';
 
 export {
   angular,
@@ -83,5 +84,6 @@ export {
   gitlab,
   jest,
   storybook,
-  threejs
+  threejs,
+  lit
 };
