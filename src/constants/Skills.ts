@@ -8,6 +8,7 @@ import {
   github, 
   gitlab, 
   html, 
+  java, 
   jest, 
   js, 
   lit, 
@@ -15,6 +16,7 @@ import {
   mysql, 
   nextjs, 
   nodejs, 
+  php, 
   pwa, 
   react, 
   redux, 
@@ -123,6 +125,18 @@ export const skills: { [topic: string]: Skill[]} = {
       progress: '40%',
       logo: mongodb,
       color: '#2DEC64'
+    },
+    {
+      name: 'PHP',
+      progress: '30%',
+      logo: php,
+      color: '#4E5B94'
+    },
+    {
+      name: 'Java',
+      progress: '30%',
+      logo: java,
+      color: '#3975AF'
     }
   ],
   others: [

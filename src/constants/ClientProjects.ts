@@ -2,7 +2,8 @@ import {
   numrot,
   kavak,
   keralty,
-  ecopetrol
+  ecopetrol,
+  monster_company
 } from '../images/projects';
 
 import { ProjectClient } from '../interfaces/Projects';
@@ -34,5 +35,12 @@ export const projects: ProjectClient[] = [
     width: '130px',
     height: '50px',
     url: 'https://the.smartwater-stream.com/'
+  },
+  {
+    name: 'Monster Plowing Company',
+    image: monster_company,
+    width: '130px',
+    height: '50px',
+    url: 'https://www.monsterplow.ca/'
   }
 ];

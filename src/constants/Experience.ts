@@ -6,8 +6,8 @@ export const experience: Experience[] = [
     place: 'Monster Plowing Company',
     title: 'Fullstack Developer',
     from: 2024,
-    to: 'Present',
-    description: 'Fullstack developer, Angular, PHP',
+    to: 2024,
+    description: 'Fullstack developer, Angular, PHP, JAVA, Web Components',
     link: 'https://www.monsterplow.ca/',
     icon: 'developer'
   },
