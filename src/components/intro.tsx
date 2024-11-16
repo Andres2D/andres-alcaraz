@@ -4,7 +4,7 @@ import * as styles from './intro.module.scss';
 
 const Intro: React.FC = () => {
 
-  const openToWork = false;
+  const openToWork = true;
 
   const handleExploreClick = () => {
     let el = document.getElementById('about');

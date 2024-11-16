@@ -41,6 +41,8 @@ import jest from './jest.svg';
 import storybook from './storybook.svg';
 import threejs from './threejs.svg';
 import lit from './lit-icon.svg';
+import php from './php.svg';
+import java from './java.svg';
 
 export {
   angular,
@@ -85,5 +87,7 @@ export {
   jest,
   storybook,
   threejs,
-  lit
+  lit,
+  php,
+  java
 };

@@ -15,6 +15,7 @@ import ecopetrol from './ecopetrol.png';
 import meaningful from './meaningful.svg';
 import wordleClone from './wordle-clone.svg';
 import marketing from './marketing.svg';
+import monster_company from './monsterpc_logo.png';
 
 export {
   blog,
@@ -33,5 +34,6 @@ export {
   playlistMaster,
   meaningful,
   wordleClone,
-  marketing
+  marketing,
+  monster_company
 }
