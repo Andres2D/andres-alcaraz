@@ -84,6 +84,16 @@ export const mapAnswers: {[key: string ]: any } = {
       <li><a href="https://twitter.com/Andres_2D_" target="_blank">Twitter X</a></li>
       <li><a href="https://discord.com/users/Andres2D#0838" target="_blank">Discord</a></li>
     </ul>
+  `,
+  'Open to work, schedule an interview': `
+    <p>Right now I'm looking for a new employer</p>
+    <p>You can reach me at:</p>
+
+    <ul>
+      <li>By phone (call me or message me): +1 437 439 4403</li>
+      <li>By email: <a href="mailto:andres2d1997.1206@gmail.com" target="_blank">andres2d1997.1206@gmail.com</a></li>
+      <li>By linkedIn: <a href="https://www.linkedin.com/in/andres-alcaraz/" target="_blank">Linkedin</a></li>
+    </ul>
   `
 };
 
@@ -97,12 +107,12 @@ export const flow = {
       Nice to meet you ${params.userInput}. 
       What would you like to know about Andres Alcaraz?
     `,
-    options: ['Biography', 'Work history', 'Projects', 'Contact info'],
+    options: ['Biography', 'Work history', 'Projects', 'Contact info', 'Open to work, schedule an interview'],
     chatDisabled: true,
     path: 'display',
   },
   new_question: {
-    options: ['Biography', 'Work history', 'Projects', 'Contact info'],
+    options: ['Biography', 'Work history', 'Projects', 'Contact info', 'Open to work, schedule an interview'],
     chatDisabled: true,
     path: 'display',
   },
