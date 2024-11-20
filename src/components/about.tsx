@@ -53,7 +53,7 @@ const About: React.FC = () => {
             <strong className={styles.spot}>code</strong> and to improve my
             skills. Every day I try to do it{' '}
             <strong className={styles.spot}>better</strong> than the day before.
-            Moreover, I enjoy the music, playing video games and football.
+            Moreover, I enjoy music, playing video games and football.
           </p>
         </motion.div>
       </div>
