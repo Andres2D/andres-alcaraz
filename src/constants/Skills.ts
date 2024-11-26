@@ -1,8 +1,11 @@
 import { Skill } from "../interfaces/Skills";
 import { 
   angular, 
+  aws, 
   contentful, 
   css, 
+  dotnet, 
+  express, 
   gatsby, 
   git, 
   github, 
@@ -10,20 +13,26 @@ import {
   html, 
   java, 
   jest, 
+  jira, 
   js, 
   lit, 
   mongodb, 
   mysql, 
+  netlify, 
   nextjs, 
   nodejs, 
+  nx, 
   php, 
   pwa, 
   react, 
   redux, 
   sass, 
+  shadcn, 
   storybook,
+  tailwind,
   threejs, 
-  typescript 
+  typescript, 
+  vercel
 } from "../images/svg";
 
 export const skills: { [topic: string]: Skill[]} = {
@@ -105,6 +114,18 @@ export const skills: { [topic: string]: Skill[]} = {
       progress: '40%',
       logo: lit,
       color: '#E3E3E3'
+    },
+    {
+      name: 'Shadcn-ui',
+      progress: '40%',
+      logo: shadcn,
+      color: '#FFF'
+    },
+    {
+      name: 'Tailwind',
+      progress: '40%',
+      logo: tailwind,
+      color: '#0e172A'
     }
   ],
   backend: [
@@ -137,6 +158,24 @@ export const skills: { [topic: string]: Skill[]} = {
       progress: '30%',
       logo: java,
       color: '#3975AF'
+    },
+    {
+      name: 'AWS',
+      progress: '30%',
+      logo: aws,
+      color: '#FFF'
+    },
+    {
+      name: 'Express',
+      progress: '30%',
+      logo: express,
+      color: '#FFF'
+    },
+    {
+      name: 'Dotnet',
+      progress: '30%',
+      logo: dotnet,
+      color: '#AB9AE9'
     }
   ],
   others: [
@@ -175,6 +214,30 @@ export const skills: { [topic: string]: Skill[]} = {
       progress: '50%',
       logo: storybook,
       color: '#FA4785'
+    },
+    {
+      name: 'Nx',
+      progress: '20%',
+      logo: nx,
+      color: '#FFF'
+    },
+    {
+      name: 'Jira',
+      progress: '20%',
+      logo: jira,
+      color: '#FFF'
+    },
+    {
+      name: 'Netlify',
+      progress: '40%',
+      logo: netlify,
+      color: '#FFF'
+    },
+    {
+      name: 'Vercel',
+      progress: '40%',
+      logo: vercel,
+      color: '#FFF'
     }
   ]
-}
+};

@@ -43,6 +43,13 @@ import threejs from './threejs.svg';
 import lit from './lit-icon.svg';
 import php from './php.svg';
 import java from './java.svg';
+import shadcn from './shadcn-ui.svg';
+import tailwind from './tailwindcss.svg';
+import aws from './aws.svg';
+import dotnet from './dotnet.svg';
+import express from './express.svg';
+import jira from './jira.svg';
+import nx from './nx.svg';
 
 export {
   angular,
@@ -89,5 +96,12 @@ export {
   threejs,
   lit,
   php,
-  java
+  java,
+  shadcn,
+  tailwind,
+  aws,
+  dotnet,
+  express,
+  jira,
+  nx
 };
