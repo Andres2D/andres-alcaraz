@@ -50,6 +50,7 @@ import dotnet from './dotnet.svg';
 import express from './express.svg';
 import jira from './jira.svg';
 import nx from './nx.svg';
+import vsco from './vsco-logo.png';
 
 export {
   angular,
@@ -103,5 +104,6 @@ export {
   dotnet,
   express,
   jira,
-  nx
+  nx,
+  vsco
 };

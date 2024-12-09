@@ -11,7 +11,8 @@ import {
   spotify,
   leetcode,
   x,
-  discord
+  discord,
+  vsco
 } from '../images/svg';
 
 export const socialMedia: SocialMedia[] = [
@@ -85,6 +86,12 @@ export const socialMedia: SocialMedia[] = [
     name: 'Discord',
     link: 'https://discord.com/users/Andres2D#0838',
     logo: discord,
+    isEmail: false
+  },
+  {
+    name: 'VSCO',
+    link: 'http://vsco.co/andres-2d?utm_source=user_grid&utm_medium=user_website&utm_campaign=link_to_grid',
+    logo: vsco,
     isEmail: false
   }
 ];
