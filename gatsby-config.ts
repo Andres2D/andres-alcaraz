@@ -24,6 +24,15 @@ const config: GatsbyConfig = {
         enableWebVitalsTracking: true,
       },
     },
+    {
+      resolve: `gatsby-plugin-posthog`,
+      options: {
+        apiKey: "phc_Vfz1HgOOjm0Gg7n8zeV0RWqBDbNPZYAorzViuwtNmca",
+        apiHost: "https://us.i.posthog.com",
+        head: true,
+        isEnabledDevMode: true
+      },
+    },
   ]
 };
 
