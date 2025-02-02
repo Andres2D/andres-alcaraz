@@ -109,7 +109,7 @@ export const flow = {
     `,
     options: ['Biography', 'Work history', 'Projects', 'Contact info', 'Open to work, schedule an interview'],
     chatDisabled: true,
-    path: 'display',
+    path: 'display'
   },
   new_question: {
     options: ['Biography', 'Work history', 'Projects', 'Contact info', 'Open to work, schedule an interview'],

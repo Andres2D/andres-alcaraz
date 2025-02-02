@@ -16,6 +16,7 @@ interface BasePicture {
 export interface ProjectClient extends BasePicture {
   image: string;
   url?: string;
+  postHogId?: string;
 }
 
 export interface Engine extends BasePicture {

@@ -6,6 +6,7 @@ import { external, github } from '../images/svg';
 import { Engine } from '../interfaces/Projects';
 import * as styles from './projects.module.scss';
 import { textVariant, fadeIn } from '../utils/motion';
+import { captureEvent } from '../utils/posthog';
 
 const Projects: React.FC = () => {
   const enginesMap = (engines: Engine[]) => {
@@ -21,7 +22,8 @@ const Projects: React.FC = () => {
     ));
   };
 
-  const handleProjectClick = (link: string) => {
+  const handleProjectClick = (link: string, type: 'preview' | 'github', projectName: string) => {
+    captureEvent(`${projectName.replaceAll(' ', '_')}_project_${type}_clicked`);
     window.open(link, '_blank');
   }
 
@@ -42,13 +44,13 @@ const Projects: React.FC = () => {
         <p className={styles.description}>{project.description}</p>
         <div className={styles.links}>
           <img 
-            onClick={() => handleProjectClick(project.urlRepository)} 
+            onClick={() => handleProjectClick(project.urlRepository, 'github', project.name)} 
             className={styles.github} 
             src={github} 
             alt="github"
           />
           <img 
-            onClick={() => handleProjectClick(project.urlDeploy)} 
+            onClick={() => handleProjectClick(project.urlDeploy, 'preview', project.name)} 
             className={styles.web} 
             src={external}
             alt="web"

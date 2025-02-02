@@ -3,4 +3,5 @@ export interface SocialMedia {
   link: string;
   logo: string;
   isEmail: boolean;
+  source: string;
 }

@@ -14,33 +14,38 @@ export const projects: ProjectClient[] = [
     image: numrot,
     width: '130px',
     height: '50px',
-    url: 'https://www.numrot7.net/vsdc/login'
+    url: 'https://www.numrot7.net/vsdc/login',
+    postHogId: 'numrot_web_project_clicked'
   },
   {
     name: 'Kavak',
     image: kavak,
     width: '130px',
     height: '50px',
-    url: 'https://www.kavak.com/mx'
+    url: 'https://www.kavak.com/mx',
+    postHogId: 'kavak_project_clicked'
   },
   {
     name: 'Keralty',
     image: keralty,
     width: '130px',
     height: '50px',
+    postHogId: 'keralty_project_clicked'
   },
   {
     name: 'Ecopetrol',
     image: ecopetrol,
     width: '130px',
     height: '50px',
-    url: 'https://the.smartwater-stream.com/'
+    url: 'https://the.smartwater-stream.com/',
+    postHogId: 'ecopetrol_project_clicked'
   },
   {
     name: 'Monster Plowing Company',
     image: monster_company,
     width: '130px',
     height: '50px',
-    url: 'https://www.monsterplow.ca/'
+    url: 'https://www.monsterplow.ca/',
+    postHogId: 'monster_plow_project_clicked'
   }
 ];

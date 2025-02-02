@@ -7,6 +7,7 @@ export interface Experience {
   to?: number | string;
   place?: string;
   link?: string;
+  postHogId?: string; 
 };
 
 type IconSelection = 'developer' | 'worker' | 'language' | 'education';

@@ -9,7 +9,8 @@ export const experience: Experience[] = [
     to: 2024,
     description: 'Fullstack developer, Angular, PHP, JAVA, Web Components',
     link: 'https://www.monsterplow.ca/',
-    icon: 'developer'
+    icon: 'developer',
+    postHogId: 'monster_plowing_link_clicked'
   },
   {
     id: 1,
@@ -19,7 +20,8 @@ export const experience: Experience[] = [
     to: 2024,
     description: 'Techs solutions, mono-repositories with Nx, Angular, Jest, Strapi CMS, Jira, Schematics. ',
     link: 'https://www.accenture.com/co-es',
-    icon: 'developer'
+    icon: 'developer',
+    postHogId: 'accenture_link_clicked'
   },
   {
     id: 6,
@@ -42,7 +44,8 @@ export const experience: Experience[] = [
     from: 2021,
     description: 'Bachelors degree (four years) - Computer Engineering Issued by World Education Services',
     link: 'https://www.politecnicojic.edu.co/',
-    icon: 'education'
+    icon: 'education',
+    postHogId: 'pcjic_link_clicked'
   },
   {
     id: 2,
@@ -52,7 +55,8 @@ export const experience: Experience[] = [
     to: 2021,
     description: 'Electronic billing provider, Angular, ASP .Net Core, AWS (S3, Elastic Beanstalk), MySql.',
     link: 'https://www.numrot.com/',
-    icon: 'developer'
+    icon: 'developer',
+    postHogId: 'numrot_link_clicked'
   },
   {
     id: 3,
@@ -62,6 +66,7 @@ export const experience: Experience[] = [
     to: 2018,
     description: 'Familiar business, administrative position, cashier',
     link: 'https://motofox-belen.netlify.app/',
-    icon: 'worker'
+    icon: 'worker',
+    postHogId: 'motofox_link_clicked'
   }
 ];

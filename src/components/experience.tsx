@@ -16,6 +16,7 @@ import {
   DeveloperIcon,
   LanguageIcon 
 } from '../assets/icons';
+import { captureEvent } from '../utils/posthog';
 
 const Experience: React.FC = () => {
 
@@ -38,6 +39,7 @@ const Experience: React.FC = () => {
         </h3>
         <a 
           className="vertical-timeline-element-subtitle"
+          onClick={() => exp.postHogId && captureEvent(exp.postHogId)}
           style={{ textDecoration: 'underline', color: '#3953ab' }}
           href={exp.link}
           target='_blank'
@@ -51,7 +53,7 @@ const Experience: React.FC = () => {
     );
   });
 
-  const clientProjects = projects.map(({ image, name, width, url }, index) => {
+  const clientProjects = projects.map(({ image, name, width, url, postHogId }, index) => {
     return (
       <motion.div
         key={name}
@@ -64,11 +66,21 @@ const Experience: React.FC = () => {
           src={image}
           alt={name}
           width={width}
-          onClick={() => url ? window.open(url, '_blank') : null}
+          onClick={() => handleProjectClick(url, postHogId)}
         />
       </motion.div>
     );
   });
+
+  const handleProjectClick = (url?: string, postHogId?: string) => {
+    if(url) {
+      window.open(url, '_blank');
+    }
+
+    if(postHogId) {
+      captureEvent(postHogId);
+    }
+  }
 
   return (
     <div className={styles.experience}>
