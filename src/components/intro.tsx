@@ -23,7 +23,8 @@ const Intro: React.FC = () => {
         I'm a Software Engineer
       </h2>
       <h3 className={styles.status}>
-        🇨🇴 🇨🇦
+        <img className={styles.flagIcon} src="https://flagcdn.com/co.svg" alt="colombia" /> 
+        <img className={styles.flagIcon} src="https://flagcdn.com/ca.svg" alt="canada" />
       </h3>
       <motion.button 
         className={styles.explore} 

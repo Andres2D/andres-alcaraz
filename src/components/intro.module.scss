@@ -12,7 +12,7 @@
   
   .title, .subtitle {
     color: $indigo-light;
-    margin: 0 auto;;
+    margin: 0 auto;
     font-family: 'Bear';
     font-size: 55px;
     text-align: center;
@@ -28,6 +28,13 @@
     font-family: 'Bear';
     font-size: 25px;
     text-align: center;
+    display: flex;
+    gap: 10px;
+
+    .flagIcon {
+      height: 20px;
+      border-radius: 5px;
+    }
   }
 
   .explore {
