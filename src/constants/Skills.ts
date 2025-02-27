@@ -23,6 +23,7 @@ import {
   nodejs, 
   nx, 
   php, 
+  posthog, 
   pwa, 
   react, 
   redux, 
@@ -237,6 +238,12 @@ export const skills: { [topic: string]: Skill[]} = {
       name: 'Vercel',
       progress: '40%',
       logo: vercel,
+      color: '#FFF'
+    },
+    {
+      name: 'PostHog',
+      progress: '20%',
+      logo: posthog,
       color: '#FFF'
     }
   ]
