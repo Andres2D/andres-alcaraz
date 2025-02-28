@@ -51,7 +51,8 @@ import express from './express.svg';
 import jira from './jira.svg';
 import nx from './nx.svg';
 import vsco from './vsco-logo.png';
-import posthog from './posthog-icon.svg'
+import posthog from './posthog-icon.svg';
+import figma from './figma.svg';
 
 export {
   angular,
@@ -107,5 +108,6 @@ export {
   jira,
   nx,
   vsco,
-  posthog
+  posthog,
+  figma
 };

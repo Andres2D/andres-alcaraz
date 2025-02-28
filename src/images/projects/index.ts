@@ -16,6 +16,7 @@ import meaningful from './meaningful.svg';
 import wordleClone from './wordle-clone.svg';
 import marketing from './marketing.svg';
 import monster_company from './monsterpc_logo.png';
+import flagsCollector from './flags-collector.svg';
 
 export {
   blog,
@@ -35,5 +36,6 @@ export {
   meaningful,
   wordleClone,
   marketing,
-  monster_company
+  monster_company,
+  flagsCollector
 }

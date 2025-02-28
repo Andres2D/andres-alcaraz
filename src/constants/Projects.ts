@@ -15,7 +15,8 @@ import {
   pwa,
   vitejs,
   vue,
-  gatsby
+  gatsby,
+  figma
 } from '../images/svg';
 import {
   blog,
@@ -26,11 +27,46 @@ import {
   motoFox,
   meaningful,
   playlistMaster,
-  wordleClone
+  wordleClone,
+  flagsCollector
 } from '../images/projects';
 import { Project } from '../interfaces/Projects';
 
 export const projects: Project[] = [
+  {
+    name: 'Flags collector',
+    description:
+      'Fun with flags',
+    preview: flagsCollector,
+    urlDeploy: 'https://flags-collector-khaki.vercel.app/',
+    urlRepository: 'https://github.com/Andres2D/flags-collector',
+    engine: [
+      {
+        name: 'Vite',
+        svgSrc: vitejs,
+        width: '25px',
+        height: '',
+      },
+      {
+        name: 'React',
+        svgSrc: react,
+        width: '25px',
+        height: '',
+      },
+      {
+        name: 'vercel',
+        svgSrc: vercel,
+        width: '25px',
+        height: '',
+      },
+      {
+        name: 'figma',
+        svgSrc: figma,
+        width: '15px',
+        height: '',
+      }
+    ],
+  },
   {
     name: 'Cotejo App',
     description: 'A funny application to schedule football matches',
@@ -66,6 +102,12 @@ export const projects: Project[] = [
         name: 'vercel',
         svgSrc: vercel,
         width: '25px',
+        height: '',
+      },
+      {
+        name: 'figma',
+        svgSrc: figma,
+        width: '15px',
         height: '',
       }
     ],
@@ -167,34 +209,6 @@ export const projects: Project[] = [
       {
         name: 'Vervel',
         svgSrc: vercel,
-        width: '25px',
-        height: '',
-      },
-    ],
-  },
-  {
-    name: 'MotoFox App',
-    description:
-      'Static WebSite to launch information about a local businesses',
-    preview: motoFox,
-    urlDeploy: 'https://motofox-belen.netlify.app/',
-    urlRepository: 'https://github.com/Andres2D/moto-fox-webapp',
-    engine: [
-      {
-        name: 'Angular',
-        svgSrc: angular,
-        width: '25px',
-        height: '',
-      },
-      {
-        name: 'Contentful',
-        svgSrc: contentful,
-        width: '25px',
-        height: '',
-      },
-      {
-        name: 'Netlify',
-        svgSrc: netlify,
         width: '25px',
         height: '',
       },
