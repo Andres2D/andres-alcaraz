@@ -6,6 +6,7 @@ import {
   css, 
   dotnet, 
   express, 
+  figma, 
   gatsby, 
   git, 
   github, 
@@ -33,7 +34,8 @@ import {
   tailwind,
   threejs, 
   typescript, 
-  vercel
+  vercel,
+  vitejs
 } from "../images/svg";
 
 export const skills: { [topic: string]: Skill[]} = {
@@ -127,6 +129,12 @@ export const skills: { [topic: string]: Skill[]} = {
       progress: '40%',
       logo: tailwind,
       color: '#0e172A'
+    },
+    {
+      name: 'Vite',
+      progress: '40%',
+      logo: vitejs,
+      color: '#FFF'
     }
   ],
   backend: [
@@ -244,6 +252,12 @@ export const skills: { [topic: string]: Skill[]} = {
       name: 'PostHog',
       progress: '20%',
       logo: posthog,
+      color: '#FFF'
+    },
+    {
+      name: 'Figma',
+      progress: '40%',
+      logo: figma,
       color: '#FFF'
     }
   ]
