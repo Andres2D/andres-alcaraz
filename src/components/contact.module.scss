@@ -47,6 +47,53 @@
   }
 }
 
+.artWork {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  display: flex;
+  color: white;
+  cursor: pointer;
+  font-family: 'Bear';
+
+  .clickable {
+    position: relative;
+    display: flex;
+
+    .labels {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      
+      p {
+        font-family: "Fjalla One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        padding: 0;
+      }
+    }
+
+    .signature {
+      position: absolute;
+      bottom: -46px;
+      left: 77px;
+    }
+  }
+
+  .credits {
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -23px;
+    font-size: 12px;
+    bottom: 41px;
+    z-index: 1;
+  }
+
+  .pre {
+    font-size: 8px;
+  }
+}
+
 @media (max-width: $small) {
   .contact {
     .badge {

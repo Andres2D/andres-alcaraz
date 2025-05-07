@@ -5,6 +5,8 @@ import { MotionWrapper } from "../hoc/motion-container";
 import * as styles from './contact.module.scss';
 import { textVariant, fadeIn } from '../utils/motion';
 import { captureEvent } from "../utils/posthog";
+import { StaticImage } from 'gatsby-plugin-image';
+import { signature } from "../images/svg";
 
 const Contact: React.FC = () => {
 
@@ -32,21 +34,43 @@ const Contact: React.FC = () => {
     captureEvent(`social_${source}_link_clicked`);
   }
 
+  
+
   return (
-    <section className={styles.contact}>
-      <motion.div variants={textVariant}>
-        <h1 className={styles.sectionTitle}>Contact me</h1>
-      </motion.div>
-      <div className={styles.list}>
-        {imagesLinks}
-      </div>
-      <img 
-        className={styles.badge}
-        src="https://www.codewars.com/users/Andres2D/badges/large" 
-        alt="codewar-badge"
-        onClick={() => captureEvent(`social_codewars_link_clicked`)}
-      />
-    </section>
+    <>
+      <section className={styles.contact}>
+        <motion.div variants={textVariant}>
+          <h1 className={styles.sectionTitle}>Contact me</h1>
+        </motion.div>
+        <div className={styles.list}>
+          {imagesLinks}
+        </div>
+        <div className={styles.artWork} >
+          <p className={styles.credits}>
+            <span className={styles.pre}>Art by </span> 
+            <a href="https://www.instagram.com/that.weirdo.m" target="_blank">that.weirdo.m</a>
+          </p>
+          <div className={styles.clickable} onClick={() => handleSocialLinkRedirect(false, 'https://github.com/Andres2D', 'signature')}>
+            <StaticImage 
+              src='../images/2d-drawn.png' alt="Andres Alcaraz Art" 
+              width={125}
+              height={125}
+            />
+            <div 
+              className={styles.labels} 
+            >
+            </div>
+            <img 
+              className={styles.signature}
+              src={signature} 
+              alt="signature"
+              height="115"
+              width="115" 
+            />
+          </div>
+        </div>
+      </section>
+    </>
   )
 }
 
