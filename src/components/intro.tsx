@@ -5,7 +5,7 @@ import { captureEvent } from "../utils/posthog";
 
 const Intro: React.FC = () => {
 
-  const openToWork = true;
+  const openToWork = false;
 
   const handleExploreClick = () => {
     captureEvent('explore_button_clicked');
