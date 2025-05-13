@@ -36,9 +36,11 @@ const Intro: React.FC = () => {
       </motion.button>
       <a 
         className={styles.blogLink}
-        onClick={() => captureEvent('visit_blog_button_clicked')}
-        href="https://2d-blog-nextjs.vercel.app/">
-        Visit my blog
+        onClick={() => captureEvent('visit_vsco_button_clicked')}
+        href="http://vsco.co/andres-2d?share=MTc0NzA2NjU1Mg%3D%3D"
+        target="_blank"  
+      >
+        vsco.co/andres-2d
       </a>
       {
         openToWork &&
