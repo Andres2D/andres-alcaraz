@@ -39,12 +39,13 @@ export const mapAnswers: {[key: string ]: any } = {
     Moreover, He enjoys music, playing video games and football.
   `,
   'Work history': `
-    <p> Andres has worked for 4 companies: </p>
+    <p> Andres has worked for 5 companies: </p>
     <ul>
       <li><a href="https://motofox-belen.netlify.app/" target="_blank">Motofox</a> 🇨🇴: Cashier in a family business from 2015 to 2018.</li>
       <li><a href="https://www.numrot.com/" target="_blank">Numrot</a> 🇨🇴: Fullstack developer in a electronic billing company from 2019 to 2021</li>
       <li><a href="https://www.accenture.com/co-es" target="_blank">Accenture</a> 🇨🇴: Frontend developer in a multinational from 2021 to 2024</li>
       <li><a href="https://www.monsterplow.ca/" target="_blank">Monster plowing company</a> 🇨🇦: Frontend developer in a Snow plowing company since 2024</li>
+      <li><a href="https://atlantixmedia.ca/" target="_blank">Atlantix Media Inc</a> 🇨🇦: Fullstack developer in a Digital Marketing finance company</li>
     </ul>
   
     <p>For sure is been a journey to become a Senior web developer.</p>
@@ -97,6 +98,7 @@ export const mapAnswers: {[key: string ]: any } = {
   `
 };
 
+// , 'Open to work, schedule an interview'
 export const flow = {
   start: {
     message: "Hi, let's talk. What's your name?",
@@ -107,12 +109,12 @@ export const flow = {
       Nice to meet you ${params.userInput}. 
       What would you like to know about Andres Alcaraz?
     `,
-    options: ['Biography', 'Work history', 'Projects', 'Contact info', 'Open to work, schedule an interview'],
+    options: ['Biography', 'Work history', 'Projects', 'Contact info'],
     chatDisabled: true,
     path: 'display'
   },
   new_question: {
-    options: ['Biography', 'Work history', 'Projects', 'Contact info', 'Open to work, schedule an interview'],
+    options: ['Biography', 'Work history', 'Projects', 'Contact info'],
     chatDisabled: true,
     path: 'display',
   },

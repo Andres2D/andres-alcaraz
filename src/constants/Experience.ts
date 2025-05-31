@@ -2,6 +2,17 @@ import { Experience } from "../interfaces/Experience";
 
 export const experience: Experience[] = [
   {
+    id: 7,
+    place: 'Atlantix Media Inc',
+    title: 'Fullstack Developer',
+    from: 2025,
+    to: 'Present',
+    description: 'Fullstack developer, NextJS, React, Node.js, Figma',
+    link: 'https://atlantixmedia.ca/',
+    icon: 'developer',
+    postHogId: 'atlantix-media_link_clicked'
+  },
+  {
     id: 0,
     place: 'Monster Plowing Company',
     title: 'Fullstack Developer',
