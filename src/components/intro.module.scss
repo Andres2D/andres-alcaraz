@@ -22,6 +22,15 @@
     }
   }
 
+  .location {
+    color: $indigo-light;
+    font-family: 'CodeLight';
+    font-weight: lighter;
+    font-size: 20px;
+    display: flex;
+    gap: 10px;
+  }
+
   .status {
     color: $indigo-light;
     margin: 0 auto;

@@ -2,10 +2,12 @@ import * as React from "react";
 import { motion } from "framer-motion"; 
 import * as styles from './intro.module.scss';
 import { captureEvent } from "../utils/posthog";
+import { LocationIcon } from "../assets/icons";
 
 const Intro: React.FC = () => {
 
   const openToWork = false;
+  const currentLocation = 'New Brunswick, Saint John';
 
   const handleExploreClick = () => {
     captureEvent('explore_button_clicked');
@@ -26,6 +28,7 @@ const Intro: React.FC = () => {
         <img className={styles.flagIcon} src="https://flagcdn.com/co.svg" alt="colombia" /> 
         <img className={styles.flagIcon} src="https://flagcdn.com/ca.svg" alt="canada" />
       </h3>
+      <p className={styles.location}>{ currentLocation } <LocationIcon /></p>
       <motion.button 
         className={styles.explore} 
         onClick={handleExploreClick}
