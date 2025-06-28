@@ -22,9 +22,12 @@ import {
   netlify, 
   nextjs, 
   nodejs, 
+  npm, 
   nx, 
   php, 
+  postgres, 
   posthog, 
+  prisma, 
   pwa, 
   react, 
   redux, 
@@ -185,7 +188,19 @@ export const skills: { [topic: string]: Skill[]} = {
       progress: '30%',
       logo: dotnet,
       color: '#AB9AE9'
-    }
+    },
+    {
+      name: 'Postgres',
+      progress: '30%',
+      logo: postgres,
+      color: '#212121'
+    },
+    {
+      name: 'Prisma',
+      progress: '30%',
+      logo: prisma,
+      color: '#FFF'
+    },
   ],
   others: [
     {
@@ -258,6 +273,12 @@ export const skills: { [topic: string]: Skill[]} = {
       name: 'Figma',
       progress: '40%',
       logo: figma,
+      color: '#FFF'
+    },
+    {
+      name: 'npm',
+      progress: '40%',
+      logo: npm,
       color: '#FFF'
     }
   ]

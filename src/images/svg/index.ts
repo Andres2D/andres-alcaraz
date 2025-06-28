@@ -54,6 +54,8 @@ import vsco from './vsco-logo.png';
 import posthog from './posthog-icon.svg';
 import figma from './figma.svg';
 import signature from './By-Andres2D.svg';
+import postgres from './postgresql.svg';
+import prisma from './prisma.svg';
 
 export {
   angular,
@@ -111,5 +113,7 @@ export {
   vsco,
   posthog,
   figma,
-  signature
+  signature,
+  postgres,
+  prisma
 };
