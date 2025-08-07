@@ -5,6 +5,7 @@ import {
   ecopetrol,
   monster_company
 } from '../images/projects';
+import { atlantix } from '../images/svg';
 
 import { ProjectClient } from '../interfaces/Projects';
 
@@ -47,5 +48,13 @@ export const projects: ProjectClient[] = [
     height: '50px',
     url: 'https://www.monsterplow.ca/',
     postHogId: 'monster_plow_project_clicked'
+  },
+  {
+    name: 'Atlantix Media Inc',
+    image: atlantix,
+    width: '180px',
+    height: '100px',
+    url: 'https://atlantixmedia.ca/',
+    postHogId: 'atlantix_project_clicked'
   }
 ];

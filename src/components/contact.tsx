@@ -19,6 +19,7 @@ const Contact: React.FC = () => {
         className={styles.socialPic}
         src={place.logo} 
         alt={place.name}
+        width={55}
         onClick={() => handleSocialLinkRedirect(place.isEmail, place.link, place.source)}
       />
     </motion.div>

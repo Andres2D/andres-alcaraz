@@ -56,6 +56,13 @@ import figma from './figma.svg';
 import signature from './By-Andres2D.svg';
 import postgres from './postgresql.svg';
 import prisma from './prisma.svg';
+import atlantix from './atl-logo.svg';
+import cursor from './cursor.png';
+import linear from './linear.svg';
+import namecheap from './namecheap.svg';
+import redis from './redis.svg';
+import upstash from './upstash.svg';
+import chesscom from './chesscom.svg';
 
 export {
   angular,
@@ -115,5 +122,12 @@ export {
   figma,
   signature,
   postgres,
-  prisma
+  prisma,
+  atlantix,
+  cursor, 
+  linear,
+  namecheap,
+  redis,
+  upstash,
+  chesscom
 };

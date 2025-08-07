@@ -12,7 +12,8 @@ import {
   leetcode,
   x,
   discord,
-  vsco
+  vsco,
+  chesscom
 } from '../images/svg';
 
 export const socialMedia: SocialMedia[] = [
@@ -106,5 +107,12 @@ export const socialMedia: SocialMedia[] = [
     logo: vsco,
     isEmail: false,
     source: 'vsco'
+  },
+  {
+    name: 'Chess.com',
+    link: 'https://www.chess.com/member/andres2d',
+    logo: chesscom,
+    isEmail: false,
+    source: 'chess.com'
   }
 ];

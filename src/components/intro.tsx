@@ -7,7 +7,7 @@ import { LocationIcon } from "../assets/icons";
 const Intro: React.FC = () => {
 
   const openToWork = false;
-  const currentLocation = 'New Brunswick, Saint John';
+  const currentLocation = 'Saint John, NB';
 
   const handleExploreClick = () => {
     captureEvent('explore_button_clicked');

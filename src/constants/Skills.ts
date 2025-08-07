@@ -38,7 +38,12 @@ import {
   threejs, 
   typescript, 
   vercel,
-  vitejs
+  vitejs,
+  cursor,
+  linear,
+  namecheap,
+  redis,
+  upstash
 } from "../images/svg";
 
 export const skills: { [topic: string]: Skill[]} = {
@@ -201,6 +206,18 @@ export const skills: { [topic: string]: Skill[]} = {
       logo: prisma,
       color: '#FFF'
     },
+    {
+      name: 'Redis',
+      progress: '30%',
+      logo: redis,
+      color: '#091A23'
+    },
+    {
+      name: 'Upstash',
+      progress: '30%',
+      logo: upstash,
+      color: '#081B16'
+    }
   ],
   others: [
     {
@@ -279,6 +296,24 @@ export const skills: { [topic: string]: Skill[]} = {
       name: 'npm',
       progress: '40%',
       logo: npm,
+      color: '#FFF'
+    },
+    {
+      name: 'Cursor',
+      progress: '30%',
+      logo: cursor,
+      color: '#FFF'
+    },
+    {
+      name: 'Linear',
+      progress: '30%',
+      logo: linear,
+      color: '#FFF'
+    },
+    {
+      name: 'Namecheap',
+      progress: '30%',
+      logo: namecheap,
       color: '#FFF'
     }
   ]
